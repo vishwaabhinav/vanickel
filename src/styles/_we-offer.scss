@@ -32,7 +32,7 @@
                 background: #fff;
                 box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
                 padding: 24px;
-                height: 100%;
+                // height: 100%;
                 pointer-events: none;
 
                 .detail{
@@ -111,8 +111,8 @@
             .offer-column{
                 // padding: 20px 40px!important;
                 // margin: 20px 40px;
-                max-width: 30%;
-                flex: 0 0 30%;
+                max-width: 32%;
+                flex: 0 0 32%;
     
                 &:nth-child(3n + 2){
                     margin: 0 20px;
@@ -121,7 +121,7 @@
                     background: #fff;
                     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
                     padding: 24px;
-                    height: 100%;
+                    // height: 100%;
         
                     .offer-details{
                         .offer-img{
@@ -184,7 +184,7 @@
                 }
                 .offer{
                     padding: 24px;
-                    height: 100%;
+                    // height: 100%;
                     position: static!important;
         
                     .offer-details{
