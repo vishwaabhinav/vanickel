@@ -1,0 +1,144 @@
+.testimonial_container {
+  padding: 60px 20px;
+  background: url("../assets/testimonial.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  .testimonial-details {
+    width: 760px;
+
+    .testimonial_header {
+      font-size: 4.8em;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: #284b63;
+
+      span {
+        color: #588157;
+      }
+    }
+
+    .quotes-img {
+      width: 112px;
+      margin-bottom: 40px;
+    }
+
+    .testimonials {
+      overflow-x: hidden;
+      .testimonial {
+        max-width: 100%;
+        flex: 0 0 100%;
+        .quote {
+          font-size: 2.4em;
+        }
+
+        .client-info {
+          font-size: 2.4em;
+          font-weight: 600;
+          color: #284b63;
+        }
+      }
+    }
+
+    .dots_container {
+      .dot_container {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #284b63;
+        cursor: pointer;
+      }
+
+      .inner-dot {
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+        background: #284b63;
+      }
+    }
+  }
+}
+
+// media queries
+
+@media (max-width: 1367px){
+  .testimonial_container {
+    padding: 60px 20px;
+  
+    .testimonial-details {
+      width: 630px;
+  
+      .testimonial_header {
+        font-size: 3.6em;
+      }
+  
+      .quotes-img {
+        width: 80px;
+      }
+  
+      .testimonials {
+        .testimonial {
+          .quote {
+            font-size: 2em;
+          }
+  
+          .client-info {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .testimonial_container {
+    padding: 60px 20px;
+    background-size: 200% 100%;
+    background-position: 80% 0;
+
+    .testimonial-details {
+      width: 70%;
+      margin: 0!important;
+
+      .testimonial_header {
+        font-size: 2.6em;
+      }
+
+      .quotes-img {
+        width: 50px;
+        margin-bottom: 40px;
+      }
+
+      .testimonials {
+        .testimonial {
+          .quote {
+            font-size: 1.6em;
+          }
+
+          .client-info {
+            font-size: 1.6em;
+            text-align: left!important;
+          }
+        }
+      }
+
+      .dots_container {
+        .dot_container {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          border: 1px solid #284b63;
+          cursor: pointer;
+        }
+
+        .inner-dot {
+          width: 70%;
+          height: 70%;
+          border-radius: 50%;
+          background: #284b63;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.contact-us{
+    background: #023047;
+    color: #fff;
+    padding: 60px 100px 20px 100px;
+
+    .contact-us_header{
+        font-size: 4.8em;
+        font-weight: 400;
+        margin-bottom: 60px;
+
+        span{
+            color: #689d55;
+        }
+    }
+
+    .contact-para{
+        font-size: 2.4em;
+        margin-bottom: 60px;
+    }
+
+    .inputs_container{
+        .contact-label{
+            font-size: 2.4em;
+        }
+
+        input,textarea{
+            width: 100%;
+            border: none;
+            outline: none;
+            background: none;
+            border-bottom: 1px solid #CCCCCC;
+            font-size: 2.4em;
+            color: #fff;
+        }
+
+        .message-label{
+            margin-top: 60px;
+        }
+
+        textarea{
+            height: 100px;
+            resize: none;
+        }
+
+        .leave-msg-btn{
+            width: 325px;
+            height: 60px;
+            border: none;
+            outline: none;
+            background: #689D55;
+            color: #fff;
+            font-size: 2.4em;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+    }
+}
+
+// media queries
+
+@media (max-width: 1367px){
+    .contact-us{
+    
+        .contact-us_header{
+            font-size: 3.6em;
+        }
+    
+        .contact-para{
+            font-size: 2em;
+        }
+    
+        .inputs_container{
+            .contact-label{
+                font-size: 2em;
+            }
+    
+            input,textarea{
+                font-size: 2em;
+            }
+    
+            .leave-msg-btn{
+                width: 250px;
+                height: 40px;
+                border: none;
+                outline: none;
+                background: #689D55;
+                color: #fff;
+                font-size: 1.8em;
+                margin-top: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px){
+    .contact-us{
+        background: #023047;
+        color: #fff;
+        padding: 60px 20px;
+
+        &>div{
+            div{
+                padding: 0!important;
+            }
+        }
+    
+        .contact-us_header{
+            font-size: 2.6em;
+            font-weight: 400;
+            margin-bottom: 20px;
+    
+            span{
+                color: #689d55;
+            }
+        }
+    
+        .contact-para{
+            font-size: 1.6em;
+            font-weight: 200;
+            margin-bottom: 60px;
+        }
+    
+        .inputs_container{
+            .contact-label{
+                font-size: 1.6em;
+            }
+    
+            input,textarea{
+                font-size: 1.6em;
+                margin-bottom: 20px;
+            }
+    
+            .message-label{
+                margin-top:0px;
+            }
+    
+            .leave-msg-btn{
+                width: 50%;
+                height: 40px;
+                border: none;
+                outline: none;
+                background: #689D55;
+                color: #fff;
+                font-size: 1.6em;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+        }
+    }   
+}

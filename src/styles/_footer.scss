@@ -1,0 +1,56 @@
+.footer{
+    margin: 40px 0 20px 0;
+    .copy-details,.privacy-and-terms{
+        font-size: 2.4em;
+        color: #fff;
+        font-weight: 200;
+    }
+
+    .privacy-and-terms{
+        .privacy{
+            border-right: 2px solid #FFFFFF;
+        }
+    }
+}
+
+// media queries
+
+@media (max-width: 1367px){
+    .footer{
+        .copy-details,.privacy-and-terms{
+            font-size: 2em;
+        }
+    }   
+}
+
+@media (max-width: 1025px){
+    .footer{
+        margin: 40px 0 20px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        .copy-details,.privacy-and-terms{
+            font-size: 1.6em;
+            flex-direction: column;
+            font-weight: 400;
+            text-align: left;
+        align-items: flex-start!important;
+        }
+
+        .copy-details{
+            margin-bottom: 40px!important;
+        }
+    
+        .privacy-and-terms{
+            font-weight: 400;
+
+            .privacy{
+                margin-bottom: 30px!important;
+            }
+
+            .privacy,.terms{
+                border-right: none;
+                padding: 0!important;
+            }
+        }
+    }
+}
