@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import logo from "../../assets/logo.png"
 import toggler from "../../assets/toggler.png"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Link } from 'react-router-dom'
 
 function Header(props) {
     const [toggle, setToggle] = useState(false)
@@ -22,10 +24,10 @@ function Header(props) {
                     </div>
                 </div>
                 <ul className={`navigation-links_container m-0 d-flex align-items-center closed ${toggle?"opened":""}`}>
-                    <li className="navigation-link m-0 active-navigation">Home</li>
-                    <li className="navigation-link m-0">What we Offer?</li>
-                    <li className="navigation-link m-0">What we Did?</li>
-                    <li className="navigation-link m-0">Contact Us</li>
+                    <li className="navigation-link m-0 active-navigation"><a href="#home"> Home</a></li>
+                    <li className="navigation-link m-0"><a href="#we-offer"> What we Offer?</a></li>
+                    <li className="navigation-link m-0"><a href="#we-did"> What we Did?</a></li>
+                    <li className="navigation-link m-0"><a href="#contact"> Contact Us</a></li>
                 </ul>
             </header>
         </div>

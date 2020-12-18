@@ -3,7 +3,7 @@ import headerBg from "../../assets/headerBg.png"
 
 function HeaderSection(props) {
   return (
-    <div className="header-section">
+    <div id="home" className="header-section">
       <div className="content_container d-flex flex-wrap">
         <div className="col-md-4">
             <h3 className="we-help_header">

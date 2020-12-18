@@ -4,7 +4,7 @@ import Footer from '../Footer/footer.component'
 
 function ContactUs(props) {
     return (
-        <div className="contact-us">
+        <div id="contact" className="contact-us">
             <h3 className="contact-us_header text-center">Let's <span>Talk</span>?</h3>
             <div className="d-flex flex-wrap">
                 <div className="col-md-8 pr-5">

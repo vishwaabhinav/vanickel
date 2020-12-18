@@ -19,7 +19,7 @@ function OurProjects(props) {
         });
     }, [window.innerWidth])
   return (
-    <div className="what-we-did">
+    <div id="we-did" className="what-we-did">
       <h3 className="what-we-did_header text-center">
         What we <span>Did</span>?
       </h3>

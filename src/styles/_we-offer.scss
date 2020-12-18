@@ -33,6 +33,11 @@
                 box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
                 padding: 24px;
                 height: 100%;
+                pointer-events: none;
+
+                .detail{
+                    overflow-y: hidden;
+                }
     
                 .offer-details{
                     .offer-img{
@@ -46,17 +51,21 @@
                 }
     
                 .view-details{
+                    border: none;
+                    outline: none;
+                    background: none;
                     font-size: 2.4em;
                     color: #588157;
                     cursor: pointer;
+                    pointer-events: visible;
                 }
             }
 
-            &:first-child{
+            // &:first-child{
                 margin: 0!important;
                 position: relative;
                 .offer{
-                    position: absolute;
+                    // position: absolute;
                     top: 0;
                     left: 0;
                     height: auto;
@@ -67,11 +76,11 @@
                         font-weight: 400;
                     }
 
-                    .view-details{
-                        display: none;
-                    }
+                    // .view-details{
+                    //     display: none;
+                    // }
                 }
-            }
+            // }
         }
 
         .dots-block{
@@ -131,19 +140,15 @@
                     }
                 }
     
-                &:first-child{
+                // &:first-child{
                     .offer{
     
                         .detail{
                             font-size: 2em;
                             font-weight: 400;
                         }
-    
-                        .view-details{
-                            display: none;
-                        }
                     }
-                }
+                // }
             }
     
             .dots-block{
@@ -180,6 +185,7 @@
                 .offer{
                     padding: 24px;
                     height: 100%;
+                    position: static!important;
         
                     .offer-details{
                         .offer-img{
