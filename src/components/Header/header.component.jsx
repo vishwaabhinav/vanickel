@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import logo from "../../assets/logo.png"
 import toggler from "../../assets/toggler.png"
-// import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Link } from 'react-router-dom'
 
 function Header(props) {
     const [toggle, setToggle] = useState(false)

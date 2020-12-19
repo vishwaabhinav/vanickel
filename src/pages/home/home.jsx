@@ -1,5 +1,4 @@
 import React from "react";
-import headerBg from "../../assets/headerBg.jpg";
 import AboutUs from "../../components/AboutUs/about-us.component";
 import ContactUs from "../../components/ContactUs/contact-us.component";
 import Header from "../../components/Header/header.component";

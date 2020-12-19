@@ -54,7 +54,7 @@ function Testimonial(props) {
             {
                 dots.map((dot,i)=>{
                     return (
-                        <div className="dot_container d-flex justify-content-center align-items-center mx-1"
+                        <div key={i} className="dot_container d-flex justify-content-center align-items-center mx-1"
                             onClick={
                                 ()=>{
                                     setMove(i * 100)
