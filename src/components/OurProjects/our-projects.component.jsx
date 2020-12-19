@@ -16,7 +16,7 @@ function OurProjects(props) {
                 setDots(["",""])
             }
         });
-    }, [window.innerWidth])
+    }, [])
   return (
     <div id="we-did" className="what-we-did">
       <h3 className="what-we-did_header text-center">
