@@ -32,18 +32,6 @@ function WeOffer(props) {
             style={{position:protoType?"absolute":"static"}}
             >
               <div className="offer-details d-flex align-items-center mb-4"
-              tabindex="0" 
-              onFocus={
-                ()=>{
-                  console.log("focus")
-                }
-              }
-              onBlur={
-                ()=>{
-                  console.log("blurred2")
-                }
-              }
-            onClick={e=>console.log("}}}}}}")}
 
               >
                 <img className="offer-img" src={proto} alt="" />
