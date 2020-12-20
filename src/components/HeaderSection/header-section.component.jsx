@@ -1,5 +1,5 @@
 import React from "react";
-import headerBg from "../../assets/headerBg.png"
+import headerBg from "../../assets/headerBg-compressed.jpg"
 
 function HeaderSection(props) {
   return (

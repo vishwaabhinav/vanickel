@@ -6,14 +6,7 @@ function Header(props) {
     const [toggle, setToggle] = useState(false)
     return (
         <div className="header_container">
-            <header className="header d-flex justify-content-between align-items-center">
-                <img src={toggler} alt="" className="toggler d-block d-md-none"
-                    onClick={
-                        ()=>{
-                            setToggle(!toggle)
-                        }
-                    }
-                />
+            <header className="header d-flex justify-content-between align-items-center">                
                 <div className="logo_container d-flex align-items-center">
                     <img className="logo" src={logo} alt=""/>
                     <div className="logo-text_container">
@@ -21,6 +14,13 @@ function Header(props) {
                         <h5 className="small-logo-text text-uppercase m-0">Labs</h5>
                     </div>
                 </div>
+                <img src={toggler} alt="" className="toggler d-block d-md-none"
+                    onClick={
+                        ()=>{
+                            setToggle(!toggle)
+                        }
+                    }
+                />
                 <ul className={`navigation-links_container m-0 d-flex align-items-center closed ${toggle?"opened":""}`}>
                     <li className="navigation-link m-0 active-navigation"><a href="#home"> Home</a></li>
                     <li className="navigation-link m-0"><a href="#we-offer"> What we Offer?</a></li>
