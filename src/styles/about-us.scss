@@ -1,115 +1,113 @@
-.about-us{
-    background: #FFFFFF;
-    padding: 60px 100px;
+.about-us {
+  background: #ffffff;
+  padding: 60px 100px;
 
-    .about-us_header{
-        font-size: 4.8em;
-        font-weight: 400;
-        color: #588157;
-        margin-bottom: 40px;
+  .about-us_header {
+    font-size: 4.8em;
+    font-weight: 400;
+    color: #588157;
+    margin-bottom: 40px;
+  }
+
+  .about-us-para {
+    font-size: 2.4em;
+    width: 55%;
+    margin-bottom: 2em;
+  }
+
+  .about-us-content {
+    .about-us-img_container {
+      img {
+        width: 100%;
+      }
     }
 
-    .about-us-para{
+    .question-answer_container {
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+
+      .question {
+        font-size: 3.6em;
+        color: #284b63;
+      }
+
+      .answer {
         font-size: 2.4em;
-        width: 55%;
+        color: #6c6c6c;
+      }
+
+      &:first-child {
+        margin-bottom: 40px;
+        border-top: 8px solid #588157;
+      }
     }
-
-    .about-us-content{
-        .about-us-img_container{
-            img{
-                width: 100%;
-            }
-        }
-
-        .question-answer_container{
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-
-            .question{
-                font-size: 3.6em;
-                color: #284B63;
-            }
-
-            .answer{
-                font-size: 2.4em;
-                color: #6C6C6C;
-            }
-
-            &:first-child{
-                margin-bottom: 40px;
-                border-top: 8px solid #588157;
-            }
-        }
-    }
+  }
 }
 
 // media queries
 
-@media (max-width: 1367px){
-    .about-us{
+@media (max-width: 1367px) {
+  .about-us {
     padding: 60px 60px;
-        .about-us_header{
-            font-size: 3.6em;
-        }
-    
-        .about-us-para{
-            font-size: 2em;
-            width: 75%;
-        }
-    
-        .about-us-content{
-    
-            .question-answer_container{
-                padding: 20px;
-    
-                .question{
-                    font-size: 3em;
-                }
-    
-                .answer{
-                    font-size: 1.6em;
-                }
-    
-            }
-        }
+    .about-us_header {
+      font-size: 3.6em;
     }
+
+    .about-us-para {
+      font-size: 2em;
+      width: 75%;
+    }
+
+    .about-us-content {
+      .question-answer_container {
+        padding: 20px;
+
+        .question {
+          font-size: 3em;
+        }
+
+        .answer {
+          font-size: 1.6em;
+        }
+      }
+    }
+  }
 }
 
-@media (max-width: 1025px){
-    .about-us{
-        padding: 60px 10px;
-    
-        .about-us_header{
-            font-size: 2.6em;
-        }
-    
-        .about-us-para{
-            font-size: 1.6em;
-            width: 90%;
-        }
-    
-        .about-us-content{
-            .about-us-img_container{
-                margin: 40px 0;
-            }
-    
-            .question-answer_container{
-    
-                .question{
-                    font-size: 2.4em;
-                    color: #284B63;
-                }
-    
-                .answer{
-                    font-size: 1.6em;
-                    color: #6C6C6C;
-                }
-    
-                &:first-child{
-                    margin-bottom: 40px;
-                    border-top: 8px solid #588157;
-                }
-            }
-        }
+@media (max-width: 1025px) {
+  .about-us {
+    padding: 60px 10px;
+
+    .about-us_header {
+      font-size: 2.6em;
     }
+
+    .about-us-para {
+      font-size: 1.6em;
+      width: 90%;
+    }
+
+    .about-us-content {
+      .about-us-img_container {
+        margin: 40px 0;
+      }
+
+      .question-answer_container {
+        .question {
+          font-size: 2.4em;
+          color: #284b63;
+        }
+
+        .answer {
+          font-size: 1.6em;
+          color: #6c6c6c;
+        }
+
+        &:first-child {
+          margin-bottom: 40px;
+          border-top: 8px solid #588157;
+        }
+      }
+    }
+  }
 }

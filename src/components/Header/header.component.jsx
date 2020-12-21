@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logo from "../../assets/logo.png"
 import toggler from "../../assets/toggler.png"
 
-function Header(props) {
+function Header(props) {    
     const [toggle, setToggle] = useState(false)
     return (
         <div className="header_container">

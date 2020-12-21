@@ -20,9 +20,6 @@ function WeOffer(props) {
         What we <span>Offer</span>?
       </h3>
       <p className="we-offer-para text-center mx-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-        consectetur quia nam, sunt recusandae tempora fugiat at odio obcaecati
-        quo ipsam soluta sit veritatis debitis, libero vero iure magni ipsum.
       </p>
       <div className="offers_container">
         <div className="d-flex flex-wrap justify-content-center">
@@ -40,11 +37,9 @@ function WeOffer(props) {
                 </h3>
               </div>
               <p className="detail" style={{height: protoType?"auto":"0",transition:"1s"}}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Beatae, sit cupiditate voluptates ullam quidem id sequi quia.
-                Sequi eius praesentium suscipit error molestiae accusamus? Dolor
-                illo obcaecati dolorum cum quam ipsa neque ducimus. Accusantium,
-                aliquid?
+              Support in transforming ideation into tangibility. 
+              Swift unlocking of business cases and rapid prototyping for market testing, 
+              feedback and scale up planning. We provide the advantage of cost efficient projects within a compact time frame.
               </p>
               <button className="view-details m-0 text-right"
                 onClick={
@@ -86,11 +81,7 @@ function WeOffer(props) {
                 <h3 className="offer-title m-0 ml-3">Support for Scale</h3>
               </div>
               <p className="detail" style={{height: supportScale?"auto":"0",transition:"1s"}}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Beatae, sit cupiditate voluptates ullam quidem id sequi quia.
-                Sequi eius praesentium suscipit error molestiae accusamus? Dolor
-                illo obcaecati dolorum cum quam ipsa neque ducimus. Accusantium,
-                aliquid?
+              Having scaled the products from tens of users to thousands and then millions, we know the challenges involved. We can help you do the same for your rocket-ship. 
               </p>
               <button className="view-details m-0 text-right"
                 onClick={
@@ -123,7 +114,6 @@ function WeOffer(props) {
             style={{position:legacyMigration?"absolute":"static"}}
             onFocus={
               ()=>{
-
               }
             }
             onBlur={
@@ -137,11 +127,7 @@ function WeOffer(props) {
                 <h3 className="offer-title m-0 ml-3">Legacy Migration</h3>
               </div>
               <p className="detail" style={{height: legacyMigration?"auto":"0",transition:"1s"}}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Beatae, sit cupiditate voluptates ullam quidem id sequi quia.
-                Sequi eius praesentium suscipit error molestiae accusamus? Dolor
-                illo obcaecati dolorum cum quam ipsa neque ducimus. Accusantium,
-                aliquid?
+              Support in migrating & re-engineering your existing legacy data into flexible to adapt applications, which lead your business transformation initiatives by providing the most up to date user experience.
               </p>
               <button className="view-details m-0 text-right"
                 onClick={
@@ -185,11 +171,7 @@ function WeOffer(props) {
                 </h3>
               </div>
               <p className="detail" style={{height: machine?"auto":"0",transition:"1s"}}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Beatae, sit cupiditate voluptates ullam quidem id sequi quia.
-                Sequi eius praesentium suscipit error molestiae accusamus? Dolor
-                illo obcaecati dolorum cum quam ipsa neque ducimus. Accusantium,
-                aliquid?
+              Services starting from creating scalable data pipelines to come up with efficient algorithms, across areas such as computer vision or natural language processing, etc, in order to help you in coming up with the perfect learning solution for your customers.
               </p>
               <button className="view-details m-0 text-right"
                 onClick={
@@ -231,11 +213,7 @@ function WeOffer(props) {
                 <h3 className="offer-title m-0 ml-3">Blockchain Development</h3>
               </div>
               <p className="detail" style={{height: blockChain?"auto":"0",transition:"1s"}}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Beatae, sit cupiditate voluptates ullam quidem id sequi quia.
-                Sequi eius praesentium suscipit error molestiae accusamus? Dolor
-                illo obcaecati dolorum cum quam ipsa neque ducimus. Accusantium,
-                aliquid?
+              Help in understanding the technology as well as the potential behind this new economy and guide your path in blockchain based digital transformation, such as leveraging smart contracts or apps powered by distributed ledgers.
               </p>
               <button className="view-details m-0 text-right"
                 onClick={
@@ -279,11 +257,7 @@ function WeOffer(props) {
                 </h3>
               </div>
               <p className="detail" style={{height: mobileapp?"auto":"0",transition:"1s"}}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Beatae, sit cupiditate voluptates ullam quidem id sequi quia.
-                Sequi eius praesentium suscipit error molestiae accusamus? Dolor
-                illo obcaecati dolorum cum quam ipsa neque ducimus. Accusantium,
-                aliquid?
+              Build cross-platform applications that are compatible across devices. Includes user app, publisher interface, server side components, testing, deployment, end to end support in rollout.
               </p>
               <button className="view-details m-0 text-right"
                 onClick={
