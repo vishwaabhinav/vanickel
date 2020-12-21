@@ -1,6 +1,6 @@
 const sgMail = require("@sendgrid/mail");
 
-exports.handler = async function (evt, ctx) {
+exports.handler = async function (evt, ctx, cb) {
   console.log("body received", evt.body);
   const { name, mail, message } = JSON.parse(evt.body);
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -38,8 +38,8 @@ exports.handler = async function (evt, ctx) {
       console.error("Error in sending mail", err);
     });
 
-  return {
+  cb(null, {
     statusCode: 200,
     body: JSON.stringify({ message: "Mail Sent" }),
-  };
+  });
 };
