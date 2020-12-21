@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TotalsSection(props) {
+function TotalsSection() {
     return (
         <div className="totals-section">
             <div className="totals_container d-flex flex-wrap justify-content-center">

@@ -8,7 +8,7 @@ import Testimonial from "../../components/Testimonial/testimonial.component";
 import TotalsSection from "../../components/TotalsSection/totals-section.component";
 import WeOffer from "../../components/WeOffer/we-offer.component";
 
-function Home(props) {
+function Home() {
   return (
     <div className="home">
       <div className="header-section_container full-section">

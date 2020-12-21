@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import project from "../../assets/project.png"
 
 
-function OurProjects(props) {
+function OurProjects() {
     const [move, setMove] = useState(0)
     const [deviceWidth, setDeviceWidth] = useState(window.innerWidth)
     const [dots, setDots] = useState(["",""])

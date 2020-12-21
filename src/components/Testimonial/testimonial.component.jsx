@@ -3,7 +3,7 @@ import quotes from "../../assets/quotes.png";
 
 const dots = ["","",""]
 
-function Testimonial(props) {
+function Testimonial() {
     const [move, setMove] = useState(0)
   return (
     <div className="testimonial_container d-flex">

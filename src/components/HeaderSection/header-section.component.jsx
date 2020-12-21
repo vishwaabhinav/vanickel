@@ -1,7 +1,7 @@
 import React from "react";
 import headerBg from "../../assets/headerBg-compressed.jpg"
 
-function HeaderSection(props) {
+function HeaderSection() {
   return (
     <div id="home" className="header-section">
       <div className="content_container d-flex flex-wrap">
@@ -14,7 +14,7 @@ function HeaderSection(props) {
               To help our clients achieve their maximum business potential by
               harnessing the power of technology, driven by innovation
             </p>
-            <a href="#contact" className="lets-talk-btn d-flex justify-content-center align-items-center">Let's Talk</a>
+            <a href="#contact" className="lets-talk-btn d-flex justify-content-center align-items-center">Let&apos;s Talk</a>
         </div>
         <div className="col-md-8">
           <img className="w-100" src={headerBg} alt=""/>

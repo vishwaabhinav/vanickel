@@ -7,7 +7,7 @@ import block from "../../assets/block.png";
 import webapp from "../../assets/webapp.png";
 import pattern from "../../assets/pattern.png";
 
-function WeOffer(props) {
+function WeOffer() {
   const [protoType, setProto] = useState(false)
   const [supportScale, setSupportScale] = useState(false)
   const [legacyMigration, setLegacyMigration] = useState(false)
@@ -33,7 +33,7 @@ function WeOffer(props) {
               >
                 <img className="offer-img" src={proto} alt="" />
                 <h3 className="offer-title m-0 ml-3">
-                  Prototype & MVP Development
+                  Prototype &amp; MVP Development
                 </h3>
               </div>
               <p className="detail" style={{height: protoType?"auto":"0",transition:"1s"}}>
