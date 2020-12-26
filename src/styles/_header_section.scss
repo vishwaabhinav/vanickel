@@ -1,8 +1,8 @@
 .header-section_container {
-  // background: url("../assets/headerBg.jpg");
-  // background-repeat: no-repeat;
-  // background-size: 100% 100%;
-  background: #023047;
+  background: url("../assets/headerBg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  // background: #023047;
   .header_container {
     padding: 38px 60px;
 
@@ -61,6 +61,10 @@
       // width: 530px;
       color: #fff;
 
+      & > div:nth-child(2) {
+        display: none;
+      }
+
       .we-help_header {
         font-size: 6.4em;
         font-weight: 400;
@@ -90,6 +94,7 @@
         font-size: 2.4em;
         cursor: pointer;
         margin-top: 80px;
+        margin-bottom: 2em;
       }
     }
   }
@@ -164,6 +169,7 @@
     // background: url("../assets/headerBg.jpg");
     // background-repeat: no-repeat;
     // background-size: 100% 100%;
+    background-image: none;
     background: #023047;
     .header_container {
       padding: 10px 0;
@@ -171,12 +177,14 @@
       .header {
         position: relative;
         padding: 0 10px;
+        justify-content: flex-start !important;
 
         .toggler {
           width: 40px;
         }
 
         .logo_container {
+          margin-left: 20px;
           .logo {
             width: 40px;
             height: auto;
@@ -240,7 +248,10 @@
       .content_container {
         // width: 530px;
         color: #fff;
-        padding-top: 3em;
+
+        & > div:nth-child(2) {
+          display: block;
+        }
 
         .we-help_header {
           font-size: 3.6em;
