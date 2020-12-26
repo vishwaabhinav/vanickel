@@ -51,6 +51,12 @@
             font-size: 2.4em;
             padding: 20px 40px;
           }
+
+          .project-subtitle {
+            font-size: 2em;
+            padding: 10px 40px;
+            border-top: #588157 solid 2px;
+          }
         }
       }
     }
@@ -82,30 +88,28 @@
 
 // media queries
 
-@media (max-width: 1367px){
+@media (max-width: 1367px) {
   .what-we-did {
     // padding: 60px 100px;
     .what-we-did_header {
       font-size: 3.6em;
     }
-  
+
     .what-we-did-para {
       width: 65%;
       font-size: 2em;
       font-weight: 400;
       margin-bottom: 40px;
     }
-  
+
     .our-projects_container {
       .our-projects {
-  
         .our-projects_header {
           font-size: 3.6em;
         }
-  
+
         .projects_container {
           .project {
-  
             .project-title {
               font-size: 2em;
             }
@@ -139,8 +143,8 @@
           font-size: 2.6em;
           margin-bottom: 20px;
 
-          br{
-              display: none;
+          br {
+            display: none;
           }
         }
 

@@ -25,7 +25,7 @@ function WeOffer() {
         <div className="d-flex flex-wrap justify-content-center">
           <div className="offer-column p-3 my-3">
             <div
-            className="offer d-flex flex-column justify-content-between"  
+            className={`offer d-flex flex-column justify-content-between ${protoType?"active-offer":""}`}
             style={{position:protoType?"absolute":"static"}}
             >
               <div className="offer-details d-flex align-items-center mb-4"
@@ -61,10 +61,11 @@ function WeOffer() {
               >View Details</button>
             </div>
           </div>
+                {/* mobile and webapp development */}
           <div className="offer-column p-3 my-3">
             <div tabIndex="-1" 
-            className="offer d-flex flex-column justify-content-between" 
-            style={{position:supportScale?"absolute":"static"}}
+            className={`offer d-flex flex-column justify-content-between ${mobileapp?"active-offer":""}`} 
+            style={{position:mobileapp?"absolute":"static"}}
             onFocus={
               ()=>{
 
@@ -77,31 +78,36 @@ function WeOffer() {
             }
             >
               <div className="offer-details d-flex align-items-center mb-4">
-                <img className="offer-img" src={support} alt="" />
-                <h3 className="offer-title m-0 ml-3">Support for Scale</h3>
+                <img className="offer-img" src={webapp} alt="" />
+                <h3 className="offer-title m-0 ml-3">
+                  Mobile & WebApp Development
+                </h3>
               </div>
-              <p className="detail" style={{height: supportScale?"auto":"0",transition:"1s"}}>
-              Having scaled the products from tens of users to thousands and then millions, we know the challenges involved. We can help you do the same for your rocket-ship. 
+              <p className="detail" style={{height: mobileapp?"auto":"0",transition:"1s"}}>
+              Build cross-platform applications that are compatible across devices. Includes user app, publisher interface, server side components, testing, deployment, end to end support in rollout.
               </p>
               <button className="view-details m-0 text-right"
                 onClick={
                   ()=>{
                     setProto(false)
-                    setSupportScale(!supportScale)
+                    setSupportScale(false)
                     setLegacyMigration(false)
                     setMachine(false)
                     setBlockChain(false)
-                    setMobileapp(false)
+                    setMobileapp(!mobileapp)
                   }
                 }
+
                 onBlur={
                   ()=>{
-                    setSupportScale(false)
+                    setMobileapp(false)
                   }
                 }
               >View Details</button>
             </div>
           </div>
+
+          
           <div className="p-3 my-3 dots-block">
             <img className="w-100" src={pattern} alt="" />
           </div>
@@ -110,7 +116,7 @@ function WeOffer() {
           </div>
           <div className="offer-column  p-3 my-3">
             <div tabIndex="-1" 
-            className="offer d-flex flex-column justify-content-between" 
+            className={`offer d-flex flex-column justify-content-between ${legacyMigration?"active-offer":""}`}
             style={{position:legacyMigration?"absolute":"static"}}
             onFocus={
               ()=>{
@@ -127,7 +133,7 @@ function WeOffer() {
                 <h3 className="offer-title m-0 ml-3">Legacy Migration</h3>
               </div>
               <p className="detail" style={{height: legacyMigration?"auto":"0",transition:"1s"}}>
-              Support in migrating & re-engineering your existing legacy data into flexible to adapt applications, which lead your business transformation initiatives by providing the most up to date user experience.
+              Support in migrating &amp; re-engineering your existing legacy data into flexible to adapt applications, which lead your business transformation initiatives by providing the most up to date user experience.
               </p>
               <button className="view-details m-0 text-right"
                 onClick={
@@ -151,7 +157,7 @@ function WeOffer() {
           </div>
           <div className="offer-column p-3 my-3">
             <div tabIndex="-1" 
-            className="offer d-flex flex-column justify-content-between" 
+            className={`offer d-flex flex-column justify-content-between ${machine?"active-offer":""}`}
             style={{position:machine?"absolute":"static"}}
             onFocus={
               ()=>{
@@ -171,7 +177,7 @@ function WeOffer() {
                 </h3>
               </div>
               <p className="detail" style={{height: machine?"auto":"0",transition:"1s"}}>
-              Services starting from creating scalable data pipelines to come up with efficient algorithms, across areas such as computer vision or natural language processing, etc, in order to help you in coming up with the perfect learning solution for your customers.
+              We offer services starting from creating scalable data pipelines to coming up with efficient algorithms, across areas such as computer vision or natural language processing, etc; To build the perfect learning solution for your customers.
               </p>
               <button className="view-details m-0 text-right"
                 onClick={
@@ -195,7 +201,7 @@ function WeOffer() {
           </div>
           <div className="offer-column p-3 my-3">
             <div tabIndex="-1" 
-            className="offer d-flex flex-column justify-content-between" 
+            className={`offer d-flex flex-column justify-content-between ${blockChain?"active-offer":""}`} 
             style={{position:blockChain?"absolute":"static"}}
             onFocus={
               ()=>{
@@ -237,8 +243,8 @@ function WeOffer() {
           </div>
           <div className="offer-column p-3 my-3">
             <div tabIndex="-1" 
-            className="offer d-flex flex-column justify-content-between" 
-            style={{position:mobileapp?"absolute":"static"}}
+            className={`offer d-flex flex-column justify-content-between ${supportScale?"active-offer":""}`} 
+            style={{position:supportScale?"absolute":"static"}}
             onFocus={
               ()=>{
 
@@ -251,29 +257,26 @@ function WeOffer() {
             }
             >
               <div className="offer-details d-flex align-items-center mb-4">
-                <img className="offer-img" src={webapp} alt="" />
-                <h3 className="offer-title m-0 ml-3">
-                  Mobile & WebApp Development
-                </h3>
+                <img className="offer-img" src={support} alt="" />
+                <h3 className="offer-title m-0 ml-3">Support for Scale</h3>
               </div>
-              <p className="detail" style={{height: mobileapp?"auto":"0",transition:"1s"}}>
-              Build cross-platform applications that are compatible across devices. Includes user app, publisher interface, server side components, testing, deployment, end to end support in rollout.
+              <p className="detail" style={{height: supportScale?"auto":"0",transition:"1s"}}>
+              Having scaled the products from tens of users to thousands and then millions, we know the challenges involved. We can help you do the same for your rocket-ship. 
               </p>
               <button className="view-details m-0 text-right"
                 onClick={
                   ()=>{
                     setProto(false)
-                    setSupportScale(false)
+                    setSupportScale(!supportScale)
                     setLegacyMigration(false)
                     setMachine(false)
                     setBlockChain(false)
-                    setMobileapp(!mobileapp)
+                    setMobileapp(false)
                   }
                 }
-
                 onBlur={
                   ()=>{
-                    setMobileapp(false)
+                    setSupportScale(false)
                   }
                 }
               >View Details</button>

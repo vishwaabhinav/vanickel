@@ -23,10 +23,7 @@ function OurProjects() {
         What we <span>Did</span>?
       </h3>
       <p className="what-we-did-para text-center mx-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum
-        voluptatem magnam deserunt illum, culpa veniam in eius consequatur
-        similique. Cum nihil blanditiis facere amet culpa, sit soluta reiciendis
-        iste?
+      Some of our work in the past year includes customised web app development for clients accross industries; Online fitness, Agri-tech &amp; Ed-tech to name a few. Apart from this we have a few successful apps in Shopify ecosystem, and a first of its kind B2B marketplace for visibility, networking &amp; digifying payments for diverse freelance small businesses.
       </p>
       <div className="our-projects_container">
         <div className="our-projects d-flex align-items-center">
@@ -34,15 +31,18 @@ function OurProjects() {
           <div className="projects_container d-flex justify-content-between">
               <div className="project"  style={{transform:`translate(-${move}%)`,transition:".5s"}}>
                   <img className="project-img" src={project} alt=""/>
-                  <h5 className="project-title m-0">Project 2</h5>
+                  <h5 className="project-title m-0">Green &amp; U</h5>
+                  <h6 className="project-subtitle m-0">Online business &amp; Design outlook consult</h6>
               </div>
               <div className="project"  style={{transform:move?(deviceWidth<1025?`translate(-${move}%)`:`translate(calc(-${move}% - 83px))`):"",transition:".5s"}}>
                   <img className="project-img" src={project} alt=""/>
-                  <h5 className="project-title m-0">Project 3</h5>
+                  <h5 className="project-title m-0">TagPixie - Shopify App</h5>
+                  <h6 className="project-subtitle m-0">Post Sale Automation - Inventory Management for Shopify Stores</h6>
               </div>
               <div className="project"  style={{transform:move?(deviceWidth<1025?`translate(-${move}%)`:`translate(calc(-${move}% - 83px))`):"",transition:".5s"}}>
                   <img className="project-img" src={project} alt=""/>
-                  <h5 className="project-title m-0">Project 4</h5>
+                  <h5 className="project-title m-0">PayOrb</h5>
+                  <h6 className="project-subtitle m-0">B2B marketplace for visibility, networking &amp; digifying payments for diverse freelance businesses</h6>
               </div>
           </div>
           <div className="rotate-left"></div>
