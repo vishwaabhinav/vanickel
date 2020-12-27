@@ -15,6 +15,11 @@ body {
   overflow-x: hidden;
 }
 
+.header-section_container {
+  display: flex;
+  flex-direction: column;
+}
+
 .full-section {
   width: 100%;
   // min-height: 100vh;

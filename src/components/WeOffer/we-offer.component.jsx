@@ -36,7 +36,7 @@ function WeOffer() {
                   Prototype &amp; MVP Development
                 </h3>
               </div>
-              <p className="detail" style={{height: protoType?"auto":"0",transition:"1s"}}>
+              <p className={"detail  " + (protoType? 'detail_open':'')} >
               Support in transforming ideation into tangibility. 
               Swift unlocking of business cases and rapid prototyping for market testing, 
               feedback and scale up planning. We provide the advantage of cost efficient projects within a compact time frame.
@@ -80,10 +80,10 @@ function WeOffer() {
               <div className="offer-details d-flex align-items-center mb-4">
                 <img className="offer-img" src={webapp} alt="" />
                 <h3 className="offer-title m-0 ml-3">
-                  Mobile & WebApp Development
+                  Mobile &amp; WebApp Development
                 </h3>
               </div>
-              <p className="detail" style={{height: mobileapp?"auto":"0",transition:"1s"}}>
+              <p className={"detail  " + (mobileapp? 'detail_open':'')} >
               Build cross-platform applications that are compatible across devices. Includes user app, publisher interface, server side components, testing, deployment, end to end support in rollout.
               </p>
               <button className="view-details m-0 text-right"
@@ -132,7 +132,7 @@ function WeOffer() {
                 <img className="offer-img" src={legacy} alt="" />
                 <h3 className="offer-title m-0 ml-3">Legacy Migration</h3>
               </div>
-              <p className="detail" style={{height: legacyMigration?"auto":"0",transition:"1s"}}>
+              <p className={"detail  " + (legacyMigration? 'detail_open':'')} >
               Support in migrating &amp; re-engineering your existing legacy data into flexible to adapt applications, which lead your business transformation initiatives by providing the most up to date user experience.
               </p>
               <button className="view-details m-0 text-right"
@@ -176,7 +176,7 @@ function WeOffer() {
                   Machine Learning/ Deep Learning
                 </h3>
               </div>
-              <p className="detail" style={{height: machine?"auto":"0",transition:"1s"}}>
+              <p className={"detail  " + (machine? 'detail_open':'')} >
               We offer services starting from creating scalable data pipelines to coming up with efficient algorithms, across areas such as computer vision or natural language processing, etc; To build the perfect learning solution for your customers.
               </p>
               <button className="view-details m-0 text-right"
@@ -218,7 +218,7 @@ function WeOffer() {
                 <img className="offer-img" src={block} alt="" />
                 <h3 className="offer-title m-0 ml-3">Blockchain Development</h3>
               </div>
-              <p className="detail" style={{height: blockChain?"auto":"0",transition:"1s"}}>
+              <p className={"detail  " + (blockChain? 'detail_open':'')} >
               Help in understanding the technology as well as the potential behind this new economy and guide your path in blockchain based digital transformation, such as leveraging smart contracts or apps powered by distributed ledgers.
               </p>
               <button className="view-details m-0 text-right"
@@ -260,7 +260,7 @@ function WeOffer() {
                 <img className="offer-img" src={support} alt="" />
                 <h3 className="offer-title m-0 ml-3">Support for Scale</h3>
               </div>
-              <p className="detail" style={{height: supportScale?"auto":"0",transition:"1s"}}>
+              <p className={"detail  " + (supportScale? 'detail_open':'')} >
               Having scaled the products from tens of users to thousands and then millions, we know the challenges involved. We can help you do the same for your rocket-ship. 
               </p>
               <button className="view-details m-0 text-right"

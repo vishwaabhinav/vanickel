@@ -1,8 +1,8 @@
 .header-section_container {
-  background: url("../assets/headerBg.jpg");
+  // background: url("../assets/headerBg.jpg");
+  background: #023047;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  // background: #023047;
   .header_container {
     padding: 38px 60px;
 
@@ -55,18 +55,32 @@
   }
 
   .header-section {
-    margin: 100px 0 0 123px;
+    padding-left: 12.3em;
+    flex-grow: 5;
+    height: 100%;
+    background: url("../assets/headerBg.jpg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
 
     .content_container {
       // width: 530px;
       color: #fff;
+      height: 100%;
+      padding-top: 10em;
+      // padding-bottom: 10em;
+
+      div {
+        display: flex;
+        flex-direction: column;
+      }
 
       & > div:nth-child(2) {
         display: none;
       }
 
       .we-help_header {
-        font-size: 6.4em;
+        font-size: 5em;
         font-weight: 400;
       }
 
@@ -74,13 +88,14 @@
         width: 75px;
         height: 7.5px;
         background: #689d55;
+        margin: 5em 0;
       }
 
       .we-help-para {
         font-size: 2.4em;
         font-weight: 400;
         color: #eeeeee;
-        margin-top: 80px;
+        // margin-top: 80px;
       }
 
       .lets-talk-btn {
@@ -93,8 +108,9 @@
         color: #fff;
         font-size: 2.4em;
         cursor: pointer;
-        margin-top: 80px;
-        margin-bottom: 2em;
+        margin-top: 1em;
+        // margin-bottom: 2em;
+        // margin-top: auto;
       }
     }
   }
@@ -134,10 +150,15 @@
     }
 
     .header-section {
-      margin: 60px 0 0 100px;
+      padding: 60px 0 0 100px;
+
+      & > div:nth-child(2) {
+        display: none;
+      }
 
       .content_container {
         // width: 530px;
+        height: 100%;
 
         .we-help_header {
           font-size: 4.6em;
@@ -145,7 +166,7 @@
 
         .we-help-para {
           font-size: 1.8em;
-          margin-top: 60px;
+          // margin-top: 60px;
         }
 
         .lets-talk-btn {
@@ -157,7 +178,7 @@
           color: #fff;
           font-size: 2em;
           cursor: pointer;
-          margin-top: 80px;
+          // margin-top: 80px;
         }
       }
     }
@@ -181,6 +202,7 @@
 
         .toggler {
           width: 40px;
+          margin-left: auto;
         }
 
         .logo_container {
@@ -244,14 +266,15 @@
 
     .header-section {
       margin: 0;
+      padding: 0;
+
+      & > div:nth-child(2) {
+        display: none;
+      }
 
       .content_container {
         // width: 530px;
         color: #fff;
-
-        & > div:nth-child(2) {
-          display: block;
-        }
 
         .we-help_header {
           font-size: 3.6em;
@@ -267,14 +290,14 @@
 
         .we-help-para {
           font-size: 1.4em;
-          margin-top: 20px;
+          // margin-top: 20px;
         }
 
         .lets-talk-btn {
           width: 45%;
           height: 40px;
           font-size: 1.6em;
-          margin-top: 40px;
+          // margin-top: 40px;
         }
       }
     }

@@ -18,6 +18,10 @@
   }
 
   .offers_container {
+    background: url("../assets/we_offer.png") no-repeat;
+    background-position: center;
+    background-size: auto 95%;
+
     .offer-column {
       // padding: 20px 40px!important;
       // margin: 20px 40px;
@@ -36,6 +40,12 @@
 
         .detail {
           overflow-y: hidden;
+          transition: max-height 0.3s ease;
+          height: 0px;
+        }
+
+        .detail_open {
+          height: auto;
         }
 
         .offer-details {
@@ -178,6 +188,7 @@
     }
 
     .offers_container {
+      background: none;
       .offer-column {
         // padding: 20px 40px!important;
         // margin: 20px 40px;
