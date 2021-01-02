@@ -10,10 +10,10 @@ function HeaderSection() {
               Innovating for simplicity
             </h3>
             <div className="short-line"></div>
-            {/* <p className="we-help-para">
-              To help our clients achieve their maximum business potential by
+            <p className="we-help-para">
+              We help our clients achieve their maximum business potential by
               harnessing the power of technology, driven by innovation
-            </p> */}
+            </p>
             <a href="#contact" className="lets-talk-btn d-flex justify-content-center align-items-center">Let&apos;s Talk</a>
         </div>
         <div className="col-md-8">
