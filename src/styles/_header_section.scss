@@ -267,6 +267,8 @@
     .header-section {
       margin: 0;
       padding: 0;
+      background-position: bottom right -6em;
+      background-size: 175%;
 
       & > div:nth-child(2) {
         display: none;
@@ -286,6 +288,7 @@
           width: 75px;
           height: 7.5px;
           background: #689d55;
+          margin: 2em 0;
         }
 
         .we-help-para {
