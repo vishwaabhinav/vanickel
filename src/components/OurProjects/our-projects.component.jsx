@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import project from "../../assets/project.png"
+import tagpixie from "../../assets/TagPixie.png"
+import payorb from "../../assets/PayOrb.png"
+import greenandyou from "../../assets/Green&You.jpeg"
 
 
 function OurProjects() {
@@ -30,17 +32,17 @@ function OurProjects() {
           <h3 className="our-projects_header">Our <br/>Latest <br/>Projects</h3>
           <div className="projects_container d-flex justify-content-between">
               <div className="project"  style={{transform:`translate(-${move}%)`,transition:".5s"}}>
-                  <img className="project-img" src={project} alt=""/>
+                  <img className="project-img" src={greenandyou} alt=""/>
                   <h5 className="project-title m-0">Green &amp; U</h5>
                   <h6 className="project-subtitle m-0">Online business &amp; Design outlook consult</h6>
               </div>
               <div className="project"  style={{transform:move?(deviceWidth<1025?`translate(-${move}%)`:`translate(calc(-${move}% - 83px))`):"",transition:".5s"}}>
-                  <img className="project-img" src={project} alt=""/>
+                  <img className="project-img" src={tagpixie} alt=""/>
                   <h5 className="project-title m-0">TagPixie - Shopify App</h5>
                   <h6 className="project-subtitle m-0">Post Sale Automation - Inventory Management for Shopify Stores</h6>
               </div>
               <div className="project"  style={{transform:move?(deviceWidth<1025?`translate(-${move}%)`:`translate(calc(-${move}% - 83px))`):"",transition:".5s"}}>
-                  <img className="project-img" src={project} alt=""/>
+                  <img className="project-img" src={payorb} alt=""/>
                   <h5 className="project-title m-0">PayOrb</h5>
                   <h6 className="project-subtitle m-0">B2B marketplace for visibility, networking &amp; digifying payments for diverse freelance businesses</h6>
               </div>
